@@ -19,10 +19,11 @@
             <%--<a href="${pageContext.request.contextPath}/salons/salon?salonId=${item.salonId}" target="_blank">--%>
                 <div class="caption">
                     <br>
-                    <p style="font-size: 20px; font-weight: bold;">${item.title}</p>
-                    <p style="font-size: 20px; font-weight: bold;">${item.author}</p>
-                    <p style="font-size: 20px; font-weight: bold;">${item.genre}</p>
-                    <p style="font-size: 20px; font-weight: bold;">${item.publicationDate}</p>
+                    <p style="font-size: 20px; font-weight: bold; color: indigo;"> Title-${item.title}</p>
+                    <p style="font-size: 20px; font-weight: bold; color: indigo;"> Author- ${item.author}</p>
+                    <p style="font-size: 20px; font-weight: bold; color: indigo;"> Genre- ${item.genre}</p>
+                    <p style="font-size: 20px; font-weight: bold; color: indigo;"> Publication Date- ${item.publicationDate}</p>
+                    <p style="font-size: 20px; font-weight: bold; color: indigo;"> Price- ${item.price}$</p>
                 </div>
             </a>
         </div>

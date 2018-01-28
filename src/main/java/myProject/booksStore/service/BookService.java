@@ -29,7 +29,7 @@ public class BookService {
         for(Book book : books){
             bookkList.add(new Bookk(book.getBookID(),
                     book.getTitle(),authorDao.getAuthorByID(book.getAuthorID()),
-                    book.getGenre(),book.getPublicationDate()));
+                    book.getGenre(),book.getPublicationDate(),book.getPrice()));
         }
         return bookkList;
     }

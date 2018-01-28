@@ -1,6 +1,6 @@
 package myProject.booksStore.model.entity;
 
-import org.springframework.stereotype.Repository;
+
 
 /**
  * Created by Armine on 25/01/2018.
@@ -12,6 +12,7 @@ public class Book {
     private Integer authorID;
     private String  genre;
     private Integer publicationDate;
+    private  Integer price;
 
     public Integer getBookID() {
         return bookID;
@@ -53,16 +54,24 @@ public class Book {
         this.publicationDate = publicationDate;
     }
 
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
     public Book() {
 
     }
 
-    public Book(Integer bookID, String title, Integer authorID, String genre, Integer publicationDate) {
-
+    public Book(Integer bookID, String title, Integer authorID, String genre, Integer publicationDate, Integer price) {
         this.bookID = bookID;
         this.title = title;
         this.authorID = authorID;
         this.genre = genre;
         this.publicationDate = publicationDate;
+        this.price = price;
     }
 }

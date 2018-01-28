@@ -18,8 +18,9 @@ public class BookMapper  implements RowMapper<Book>{
         Integer authorID = resultSet.getInt("authorID");
         String genre = resultSet.getString("genre");
         Integer publicationDate = resultSet.getInt("publication_date");
+        Integer price = resultSet.getInt("price");
 
-        Book book = new Book(bookID,title,authorID,genre,publicationDate);
+        Book book = new Book(bookID,title,authorID,genre,publicationDate,price);
         return book;
     }
 }

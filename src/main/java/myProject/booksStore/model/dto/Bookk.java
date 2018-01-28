@@ -9,13 +9,24 @@ public class Bookk {
     private String author;
     private String  genre;
     private Integer publicationDate;
+    private Integer price;
 
-    public Bookk(Integer bookID, String title, String author, String genre, Integer publicationDate) {
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public Bookk(Integer bookID, String title, String author, String genre, Integer publicationDate, Integer price) {
+
         this.bookID = bookID;
         this.title = title;
         this.author = author;
         this.genre = genre;
         this.publicationDate = publicationDate;
+        this.price = price;
     }
 
     public Integer getBookID() {
